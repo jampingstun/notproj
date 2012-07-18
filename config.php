@@ -1,8 +1,12 @@
 <?
-$DBCONFIG = array(
-	'host'=>'joko',
+$dbconfig = array(
+	'host'=>'localhost',
 	'user'=>'root',
-	'pass'=>'root0r',
-	'db'=>'kuisioner',
+	'pass'=>'',
+	'db'=>'notaris',
+);
+
+$indexconfig = array(
+    'pemohon'=>array('ktp','nama'),
 );
 ?>

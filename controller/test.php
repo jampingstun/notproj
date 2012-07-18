@@ -24,11 +24,25 @@
 				// sql untuk insert
 				print_r($f);
 			}
+                        
+                        $sql = "delete from tbl_index where tipe='pemohon' and id='".$last_id."'";
+                        foreach ($indexconfig['pemohon'] as $v) {
+                            $sql = "insert into tbl_index (tipe,id,kode,isi) values ('pemohon','".$last_id."','".$v."','".$f[$v]."')";
+                        }
 		
 			include 'view/'.$view.'-add.php';
 		break;
 		default:
-			include 'view/'.$view.'.php';
+                        $data = array();
+                        $whr = '';
+                        if ($_GET['tipecari']!="") $whr.="  and i.kode='".$_GET['tipecari']."'";
+                        if ($_GET['cari']!="") $whr.="  and i.isi like '%".$_GET['cari']."%'";
+                        $sql = "select * from pemohon p,tbl_index i 
+                                where i.id=p.idpemohon and i.tipe='pemohon' 
+                                ".$whr." group by p.idpemohon";
+                        $res = mysql_query($sql) or die(mysql_error());
+                        while ($row=mysql_fetch_array($res)) $data[] = $row;
+                        include 'view/'.$view.'.php';
 		break;
 	}
 ?>
