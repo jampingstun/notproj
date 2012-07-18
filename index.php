@@ -1,5 +1,5 @@
 <?php
-	session_start();
+session_start();
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 	include 'config.php';
 	include 'funct/common.php';
