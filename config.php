@@ -1,8 +1,8 @@
 <?
 $DBCONFIG = array(
-	'host'=>'loclahost',
+	'host'=>'joko',
 	'user'=>'root',
-	'pass'=>'root',
+	'pass'=>'root0r',
 	'db'=>'kuisioner',
 );
 ?>
