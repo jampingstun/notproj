@@ -14,3 +14,4 @@ Langkah-langkah buat ngedit dan ngegabungin file kita ke online biar aman .... U
 10. bila sudah,, cek apakah ada commit baru lagi di github.. bila tidak langsung push saja.. bila iya lakukan buat branch lagi dan pull,, lalu lakukan merge, kemudian push.
 
 NB: bila bingung please contact your administrator..
+lllll
