@@ -1,25 +1,16 @@
-udaramedia
-==========
-TUGAS
-==========
+PEDOMAN UMUM HOW TO WORK:
 
-Langkah-langkah buat ngegabungin file kita ke online biar aman...
+Langkah-langkah buat ngedit dan ngegabungin file kita ke online biar aman .... USE NETBEANS
 
-1. membuat cabang atau branch
->  git checkout -b
+1. buka netbeans lalu melakukan pull dari github..
+2. membuat branch baru .. contoh nama branch:"cabang"
+3. lakukan pengeditan dengan branch tersebut.
+4. lakukakan commit bila sudah selesai.
+5. switch/checkout ke branch "master". !!!! (jangan sampai lupa)
+6. buka browser masuk ke github,, lihat apakah ada commit terbaru dari teman.. jika ada maka lakukan pull dari github ke   netbeans. jika tidak maka abaikan langkah ini.
+7. lakukan merge...
+8. bila terjadi conflict merge,, lakukan pembenaran yang tepat.. lalu commit..
+9. delete branch "cabang" !
+10. bila sudah,, cek apakah ada commit baru lagi di github.. bila tidak langsung push saja.. bila iya lakukan buat branch lagi dan pull,, lalu lakukan merge, kemudian push.
 
-2.lakukakan commit untuk
->	git add .
-> git commit -m "tuliskan pesan agar diperhatikan oleh anggota kelompok lain"
-
-3.masuklah ke master
->	git checkout master
-
-4.lakukan merge dengan branch
->	git merge <nama_branch>
-
-5.masukan perubahan ke server git
->	git push origin
-
-6.delete branch yang tadi kita buat
->	git branch -d <nama_branch>
+NB: bila bingung please contact your administrator..
