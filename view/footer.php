@@ -2,10 +2,6 @@
   <footer class="modal-footer">
        <p><h6><center>Copyright 2012</center></h6></p>
   </footer>
-
-
-
-
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-dropdown.js"></script>
     <script src="assets/js/bootstrap-alert.js"></script>
