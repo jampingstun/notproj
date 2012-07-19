@@ -7,7 +7,7 @@
 	if (file_exists('view/'.$fileinc)) {
 		include 'view/'.$fileinc;
 	} else {
-		include 'view/tgrouptransaksi.php';
+		include 'view/menu.php';
 	}
 	
         include 'include/footer.php';
