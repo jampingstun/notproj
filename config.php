@@ -3,7 +3,7 @@ $dbconfig = array(
 	'host'=>'localhost',
 	'user'=>'root',
 	'pass'=>'',
-	'db'=>'notaris',
+	'db'=>'notaris&ppat',
 );
 
 $indexconfig = array(

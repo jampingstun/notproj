@@ -27,10 +27,10 @@ PemohonDataStore = new Ext.data.Store({
         {name: 'id_pemohon', type: 'int', mapping: 'id_pemohon'},
         {name: 'id_grouppemohon', type: 'int', mapping: 'id_grouppemohon'},
         {name: 'tgldaftar', type: 'date', mapping: 'tgldaftar'},
-        {name: 'infopemohon', type: 'string', mapping: 'infopemohon'},
+        {name: 'nama', type: 'string', mapping: 'nama'},
         {name: 'alamat', type: 'string', mapping: 'alamat'},
         {name: 'tempat', type: 'string', mapping: 'tempat'},
-        {name: 'tgllahir', type: 'date', mapping: 'tgllahir'},
+        {name: 'tglahir', type: 'string', mapping: 'tglahir'},
         {name: 'agama', type: 'string', mapping: 'agama'},
         {name: 'pb_pemohon', type: 'int', mapping: 'pb_pemohon'}
       ]),
@@ -65,7 +65,7 @@ PemohonDataStore = new Ext.data.Store({
           })
       },{
         header: 'Nama',
-        dataIndex: 'infopemohon',
+        dataIndex: 'nama',
         width: 150,
         readOnly: true                     // we don't necessarily want to see this...
       },{

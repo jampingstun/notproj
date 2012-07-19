@@ -12,11 +12,14 @@
 		while($rec = mysql_fetch_array($result)){
                         // render the right date format
 			//$rec['tgldaftar']=codeDate($rec['tgldaftar']);
-			$arr[] = $rec;
+			//$arr = $rec;
+                        $arr[] = $rec;
 		}
-		$jsonresult = json_encode($arr);
+                $info = json_decode($arr[0]['infopemohon'], true);
+                $fusion = array_merge($arr[0],$info);
+		$jsonresult = json_encode($fusion);
                 $_GET["act"] = "default";
-		echo '({"total":"'.$nbrows.'","results":'.$jsonresult.'})';
+		echo '({"total":"'.$nbrows.'","results":['.$jsonresult.']})'; //ono kurung
 	} else {
 		echo '({"total":"0", "results":""})';
 	}
