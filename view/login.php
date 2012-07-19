@@ -1,3 +1,4 @@
+
 <!-- Navbar
     ================================================== -->
  <div class="navbar navbar-fixed-top">  
@@ -8,7 +9,7 @@
             <span class="icon-bar"></span>  
             <span class="icon-bar"></span>  
           </a>  
-          <a class="brand" href="#">SISTEM BANK SOAL</a>  
+          <a class="brand" href="#">NOTARIS PPAT</a>  
           <div class="nav-collapse">  
             <ul class="nav">   
             </ul>
@@ -25,7 +26,7 @@
   <div class="container">
       <div class="content">
           <div class="row">
-            <form id="login" method="post">
+            <form id="login" action="proses_login.php" method="post">
                 <div class="login-form">
                   <h2>Login</h2>
                       <fieldset>
@@ -34,7 +35,7 @@
                           </div>
                           <div>
                             <input style="width:152px;" type="password" placeholder="Password" id="password" name="password">
-                            <button class=" btn btn-primary" type="submit" style="margin-bottom:9px;">Login</button>
+                            <button class=" btn btn-primary" type="submit" style="margin-bottom:9px;" onclick="masuk()">Login</button>
                           </div>
                           
                       </fieldset>
@@ -56,10 +57,6 @@
   }
   ?>
       
-  <!---footer -->
-  <footer style="margin-top:33%;" class="modal-footer">
-       <p><h6><center>Copyright 2012</center></h6></p>
-  </footer>
 
   
   </div>

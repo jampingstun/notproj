@@ -49,14 +49,15 @@ PemohonDataStore = new Ext.data.Store({
      PemohonDataStore.load({params:{start:0,limit:11,orderby:'id_transaksi',sort:'ASC'}});
     PemohonColumnModel = new Ext.grid.ColumnModel(
     [   Checkbox,
-        {
-        header: 'ID Transaksi',
-        readOnly: true,
-        dataIndex: 'id_transaksi', // this is where the mapped name is important!
-        width: 250,
-        locked   : true,
-        hidden: false
-      },{
+//        {
+//        header: 'ID Transaksi',
+//        readOnly: true,
+//        dataIndex: 'id_transaksi', // this is where the mapped name is important!
+//        width: 250,
+//        locked   : true,
+//        hidden: false
+//      },
+      {
         header: 'Tanggal Masuk',
         dataIndex: 'tglmasuk',
         width: 250,
