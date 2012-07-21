@@ -1,3 +1,3 @@
 <?php
-include 'view/tpemohon.php';
+include 'view/pemohon.php';
 ?>
