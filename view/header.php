@@ -42,7 +42,7 @@
                 .mepet{
                     margin: 0;
                     padding: 0;
-                    color: white;
+                    background-color: #fff;
                 }
                 
             </style>

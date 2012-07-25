@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="row">
+<html>
+    <body>
         <div class="span9">
             <div class="well" style="background-color: white;">
                 <div class="page-header">
@@ -112,6 +112,7 @@
         </form>
             </div>
         </div>
-    </div>
-</div>
-</div>
+            </div><!--
+-->   </div>
+    </body>
+</html>

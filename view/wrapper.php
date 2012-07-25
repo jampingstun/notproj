@@ -1,13 +1,20 @@
 <?php
-include 'view/menu.php';
+
+
 //  echo      '<div class="span9">';
+if (isset($_SESSION['username'])) {
 $op = $_GET['op'];
-$oo = $_GET['oo'];
 $fileinc = strtolower($op).'.php';
-if (file_exists('view/'.$fileinc)) {
-        include 'view/'.$op.'.php';
+include 'view/menu.php';
+        if (file_exists('view/'.$fileinc)) {
+
+                include 'view/'.$op.'.php';
+        }
+        else{
+            include 'view/home.php';
+        }
 } else {
-    echo "error";
+    include 'controller/login.php';
 }
 
 //       echo '</div>

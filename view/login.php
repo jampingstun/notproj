@@ -23,7 +23,7 @@
       <div class="content">
           <div class="row">
               <div class="span3 login" style="margin-left: 33%">
-                <form id="login" action="proses_login.php" method="post">
+                <form id="login" method="post">
                     <div class="login-form">
                     <h2>Login</h2>
                         <fieldset>
@@ -32,7 +32,7 @@
                             </div>
                             <div>
                                 <input style="width:152px;" type="password" placeholder="Password" id="password" name="password">
-                                <button class=" btn btn-primary" type="submit" style="margin-bottom:9px;" onclick="masuk()">Login</button>
+                                <button class=" btn btn-primary" type="submit" style="margin-bottom:9px;">Login</button>
                             </div>
 
                         </fieldset>
