@@ -26,9 +26,18 @@ if ($_GET['ip']=='input') {
 if ($_GET['ip']=='cari') {
     $sql = "SELECT * FROM tbl_index WHERE kode='".$f['kode']."' and isi='".$f['isi']."'";
     $data = mysql_query($sql) or die(mysql_error());
-    while ($row = mysql_fetch_array($data)) {
-        
-    }  
+    if (mysql_num_rows($data)>0) {
+        while ($row = mysql_fetch_array($data)) {
+            $id = $row['id'];
+        }
+        $sql = "SELECT * FROM pemohon WHERE idpemohon='".$id."'";
+    }
+    else {
+        echo "data tidak ditemukan";
+    }
+    
+    
+    
 }
 
 ?>
