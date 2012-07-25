@@ -29,7 +29,7 @@
    <div class="container">
     <div class="row">
         <div class="span9">
-            <div class="well" style="background-color: white;">
+            <div class="" style="background-color: white;">
                 <div class="page-header">
                     <h3><b>Data Group Pemohon</b><br/><small>Data Identitas Group Pemohon</small></h3>
                 </div>
