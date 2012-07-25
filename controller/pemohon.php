@@ -1,5 +1,5 @@
 <?php
-if ($_GET['ip']=='input') {
+if ($_GET['ip']=='add') {
     $f = $_POST['f'];
     $idgrouppemohon = $f['grouppemohon'];
     $tgldaftar = $f['tgldaftar'];
