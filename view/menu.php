@@ -28,24 +28,19 @@
                     <li><a href="#" data-toggle="collapse" data-target="#Mpemohon"><i class="icon-user"></i>&nbsp;&nbsp;<b>Data Pemohon</b> </a></li>
                     <div  style="background-color: #f5f5f5;   border: 1px solid #eee; border: 1px solid rgba(0, 0, 0, 0.05);" >
                         <ul id="Mpemohon" class="submenu collapse ">
-                            <li><a href="#"><i class="icon-plus-sign"></i>&nbsp;input pemohon</a></li>
-                            <li><a href="#"><i class="icon-search"></i>&nbsp;lihat pemohon</a></li>     
+                            <li><a href="?op=pemohon"><i class="icon-plus-sign"></i>&nbsp; input pemohon</a></li>
+                            <li><a href="#"><i class="icon-search"></i> &nbsp;lihat pemohon</a></li>     
                         </ul>
                     </div>
                     <li><a href="#" data-toggle="collapse" data-target="#Mtransaksi"><i class="icon-list-alt"></i>&nbsp;&nbsp;<b>Data Transaksi</b></a></li>
                     <div  style="background-color: #f5f5f5;   border: 1px solid #eee; border: 1px solid rgba(0, 0, 0, 0.05);" >    
                         <ul id="Mtransaksi" class="submenu collapse">
-                            <li ><a href="#"><i class="icon-plus-sign"></i>&nbsp;input transaksi</a></li>
-                            <li ><a href="#"><i class="icon-search"></i>&nbsp;lihat transaksi</a></li>                    
+                            <li ><a href="?op=tgrouptransakso"><i class="icon-plus-sign"></i>&nbsp; input transaksi</a></li>
+                            <li ><a href="#"><i class="icon-search"></i> &nbsp;lihat transaksi</a></li>                    
                         </ul>
                     </div>
                 </ul>
-             </div>
+            </form>
         </div>
-        <div class="span9">
-<!--     content goes here       -->
-       <? include 'view/tgrouptransaksi.php';?>
-        </div>
-    </div>
-</div>    
+    
 

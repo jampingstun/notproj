@@ -9,7 +9,9 @@ if (mysql_num_rows($data)>0) {
     }
     $sql = "SELECT * FROM ".$f['tipe']." WHERE id".$f['tipe']."='".$id."'";
     $result = mysql_query($sql) or die(mysql_error());
-    while ($row = mysql_fetch_array($result)) $row = $data;
+    while ($row = mysql_fetch_array($result)) {
+        print_r(json_decode($row['infopemohon'],true));
+    }
 }
 else {
     echo "data tidak ditemukan";

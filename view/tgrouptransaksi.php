@@ -26,8 +26,8 @@
 
 </style>
 <body>
-   <div class="container">
-    <div class="row">
+<!--   <div class="container">
+    <div class="row">-->
         <div class="span9">
             <div class="well" style="background-color: white;">
                 <div class="page-header">
@@ -37,8 +37,8 @@
       <div id="dok"></div>
             </div>
         </div>
-    </div>
-   </div>
+<!--    </div>
+   </div>-->
 </body>
 
 </html>

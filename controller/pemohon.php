@@ -1,5 +1,5 @@
 <?php
-if ($_GET['ip']=='add') {
+//if ($_GET['ip']=='add') {
     $f = $_POST['f'];
     $idgrouppemohon = $f['grouppemohon'];
     $tgldaftar = $f['tgldaftar'];
@@ -19,8 +19,8 @@ if ($_GET['ip']=='add') {
             $sql = "insert into tbl_index (tipe,id,kode,isi) values ('pemohon','".$last_id."','".$v."','".$f[$v]."')";
             mysql_query($sql) or die(mysql_error());
         }
-    }  
-    include 'view/pemohon.php';
-}
+    }
+    include 'view/wrapper.php';
+//}
 
 ?>
