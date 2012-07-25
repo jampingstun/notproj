@@ -3,10 +3,10 @@ $dbconfig = array(
 	'host'=>'localhost',
 	'user'=>'root',
 	'pass'=>'',
-	'db'=>'notaris&ppat',
+	'db'=>'notaris',
 );
 
 $indexconfig = array(
-    'pemohon'=>array('ktp','nama'),
+    'pemohon'=>array('nama','tempat'),
 );
 ?>
