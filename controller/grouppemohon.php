@@ -38,7 +38,8 @@ else if($_GET['act'] == "edit")
 else if($_GET['act'] == "add")
 
 {
-      //move_uploaded_file($_FILES['file_dokumentasi']['tmp_name'],"artikel/".$_FILES['file_dokumentasi']['name']);	 
+      //move_uploaded_file($_FILES['file_dokumentasi']['tmp_name'],"artikel/".$_FILES['file_dokumentasi']['name']);
+    if ($_POST['simpan']) {
     $f = $_POST['f']; 
     $str="'".implode("','",$f)."'";
     //echo $str;
@@ -53,6 +54,9 @@ else if($_GET['act'] == "add")
                     {
                     echo "{success: false, errors: { reason: 'upload failed!!' }}";
                 }
+                
+    }
+    include 'view/wrapper.php';
 }
 
 else if(isset($_POST["del"]))

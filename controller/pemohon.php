@@ -1,5 +1,5 @@
 <?php
-//if ($_GET['ip']=='add') {
+if ($_GET['act']=='add') {
     $f = $_POST['f'];
     $idgrouppemohon = $f['grouppemohon'];
     $tgldaftar = $f['tgldaftar'];
@@ -21,6 +21,10 @@
         }
     }
     include 'view/wrapper.php';
-//}
+}
+
+if ($_GET['act']=='get') {
+    
+}
 
 ?>

@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="row">
+<!--<div class="container">
+    <div class="row">-->
         <div class="span9">
             <div class="well" style="background-color: white;">
                 <div class="page-header">
@@ -149,11 +149,11 @@
              <br/>
              <br/>
             <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Simpan</button>
+                <input type="submit" class="btn btn-primary" name="simpan" value="simpan"/>
                     <a onclick="history.go(-1)" class="btn">Batal</a>
             </div>
         </form>
             </div>
         </div>
-    </div>
-</div>
+    </div><!--
+</div>-->

@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////
   mysql_connect("localhost", "root", "") or
   die("Could not connect: " . mysql_error());
-  mysql_select_db("notaris&ppat");
+  mysql_select_db("notaris");
   $query = "SELECT * FROM pemohon";
 	$result = mysql_query($query);
 	$nbrows = mysql_num_rows($result);	

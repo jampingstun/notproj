@@ -1,12 +1,12 @@
-var id_pemohon;         // this will be our datastore
-var id_grouppemohon;       // this will be our columnmodel
+var idpemohon;         // this will be our datastore
+var idgrouppemohon;       // this will be our columnmodel
 var tgldaftar;
 var nama;
 var alamat;
 var tempat;
 var tgllahir;
 var agama;
-var id_pemohon;
+var idpemohon;
  
 Ext.onReady(function(){
   Ext.QuickTips.init();
@@ -24,17 +24,17 @@ PemohonDataStore = new Ext.data.Store({
         totalProperty: 'total',
         id: 'id'
       },[ 
-        {name: 'id_pemohon', type: 'int', mapping: 'id_pemohon'},
-        {name: 'id_grouppemohon', type: 'int', mapping: 'id_grouppemohon'},
+        {name: 'idpemohon', type: 'int', mapping: 'idpemohon'},
+        {name: 'idgrouppemohon', type: 'int', mapping: 'idgrouppemohon'},
         {name: 'tgldaftar', type: 'date', mapping: 'tgldaftar'},
         {name: 'nama', type: 'string', mapping: 'nama'},
         {name: 'alamat', type: 'string', mapping: 'alamat'},
         {name: 'tempat', type: 'string', mapping: 'tempat'},
         {name: 'tglahir', type: 'string', mapping: 'tglahir'},
         {name: 'agama', type: 'string', mapping: 'agama'},
-        {name: 'pb_pemohon', type: 'int', mapping: 'pb_pemohon'}
+        {name: 'pbpemohon', type: 'int', mapping: 'pbpemohon'}
       ]),
-      sortInfo:{field: 'id_pemohon', direction: "ASC"}
+      sortInfo:{field: 'idpemohon', direction: "ASC"}
     });
     
     PemohonColumnModel = new Ext.grid.ColumnModel(
@@ -42,12 +42,12 @@ PemohonDataStore = new Ext.data.Store({
         {
         header: 'ID Pemohon',
         readOnly: true,
-        dataIndex: 'id_pemohon', // this is where the mapped name is important!
+        dataIndex: 'idpemohon', // this is where the mapped name is important!
         width: 150,
         hidden: false
       },{
         header: 'ID Group Pemohon',
-        dataIndex: 'id_grouppemohon',
+        dataIndex: 'idgrouppemohon',
         width: 150,
         editor: new Ext.form.TextField({  // rules about editing
             allowBlank: false,
@@ -91,7 +91,7 @@ PemohonDataStore = new Ext.data.Store({
       }
       ,{
         header: "PB Pemohon",
-        dataIndex: 'pb_pemohon',
+        dataIndex: 'pbpemohon',
         width: 150,
         renderer: function(v){ return '$ ' + v; },   
                            // we tell Ext how to display the number
@@ -131,12 +131,12 @@ PemohonDataStore = new Ext.data.Store({
             xtype: 'textfield',
             fieldLabel: 'ID Pemohon',
 			anchor: '80%',
-			name: 'id_pemohon'
+			name: 'idpemohon'
         },
         {xtype: 'textfield',
             fieldLabel: 'ID Group Pemohon',
 			anchor: '80%',
-			name: 'id_grouppemohon'
+			name: 'idgrouppemohon'
         },
 		
 		{
@@ -262,7 +262,7 @@ PemohonDataStore = new Ext.data.Store({
 			totalProperty: 'total',
 			id: 'id_pemohon',
 			fields: [
-				'id_pemohon','id_grouppemohon','tgldaftar','nama','alamat','tempat','tglahir','agama','pb_pemohon'
+				'idpemohon','idgrouppemohon','tgldaftar','nama','alamat','tempat','tglahir','agama','pbpemohon'
 			]
 		}),
         items: 

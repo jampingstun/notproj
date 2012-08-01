@@ -38,7 +38,7 @@ else if($_GET['act'] == "add")
 
 {
       //move_uploaded_file($_FILES['file_dokumentasi']['tmp_name'],"artikel/".$_FILES['file_dokumentasi']['name']);	 
-      
+      if($_POST['simpan']) {
 	  $sql_query = mysql_query("INSERT INTO transaksi(`id_transaksi`,`tglmasuk`,`id_pemohon`,`id_grouptr`,`judul`,`jmlberkas`,`status`,`jmlberkasselesai`,`harga`,`sudahbayar`,`tglselesai`) VALUES('null','".$_POST["tglmasuk"]."','".$_POST["id_pemohon"]."','".$_POST["id_grouptr"]."','".$_POST["judul"]."','".$_POST["jmlberkas"]."','".$_POST["status"]."','".$_POST["jmlberkasselesai"]."','".$_POST["harga"]."','".$_POST["sudahbayar"]."','".$_POST["tglselesai"]."')");
             if ($sql_query)
                     {
@@ -48,6 +48,8 @@ else if($_GET['act'] == "add")
                     {
                     echo "{success: false, errors: { reason: 'upload failed!!' }}";
                 }
+      }
+      include 'view/wrapper.php';
 }
 
 else if(isset($_POST["del"]))
@@ -79,4 +81,5 @@ function codeDate ($date) {
 	$r = $tab[1]."-".$tab[2]."-".$tab[0];
 	return $r;
 }
+
 ?>

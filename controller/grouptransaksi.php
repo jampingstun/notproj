@@ -38,7 +38,8 @@ else if($_GET['act'] == "edit")
 else if($_GET['act'] == "add")
 
 {
-      //move_uploaded_file($_FILES['file_dokumentasi']['tmp_name'],"artikel/".$_FILES['file_dokumentasi']['name']);	 
+      //move_uploaded_file($_FILES['file_dokumentasi']['tmp_name'],"artikel/".$_FILES['file_dokumentasi']['name']);
+    if ($_POST['simpan']) {
           $f = $_POST['f'];
           $str="'".implode("','",$f)."'";
 	  //$sql_query = mysql_query("INSERT INTO grouptransaksi(`id_grouptr`,`nm_grouptr`,`pb_grouptr`) VALUES('null','".$_POST["nm_grouptr"]."','".$_POST["pb_grouptr"]."')");
@@ -51,6 +52,9 @@ else if($_GET['act'] == "add")
                     {
                     echo "{success: false, errors: { reason: 'upload failed!!' }}";
                 }
+                
+    }
+    include 'view/wrapper.php';
 }
 
 else if(isset($_POST["del"]))

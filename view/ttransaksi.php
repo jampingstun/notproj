@@ -31,8 +31,8 @@
 		}        
 </style>-->
 <body>
-   <div class="container">
-    <div class="row">
+<!--   <div class="container">
+    <div class="row">-->
         <div class="span9">
             <div class="well" style="background-color: white;">
                 <div class="page-header">
@@ -41,10 +41,10 @@
                 <br/>
       <div id="dok"></div>
             </div>
-        </div>
-    </div>
-   </div>
-</body>
+        </div><!--
+    </div>-->
+<!--   </div>
+</body>-->
 
 </html>
 
